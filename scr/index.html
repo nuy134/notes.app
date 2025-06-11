@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aplikasi Catatan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <app-bar></app-bar>
+  <div class="container">
+    <note-form></note-form>
+    <note-list></note-list>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aplikasi Catatan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <app-bar></app-bar>
+  <main class="container" role="main">
+    <section class="hero">
+      <h1 class="hero-title">Aplikasi Catatan</h1>
+      <note-form></note-form>
+    </section>
+    <section aria-label="Daftar catatan">
+      <note-list></note-list>
+    </section>
+    <loading-indicator></loading-indicator>
+  </main>
+  <script src="bundle.js"></script>
+</body>
+</html>

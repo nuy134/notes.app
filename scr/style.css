@@ -1,0 +1,111 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #9fc0f3;
+  color: #333;
+}
+app-bar {
+  display: block;
+  background: #023e5a;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  user-select: none;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+note-form {
+  background: rgba(255, 255, 255, 0.662);
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+note-form form {
+  display: flex;
+  flex-direction: column;
+}
+note-form input[type="text"],
+note-form textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+note-form textarea {
+  min-height: 100px;
+}
+note-form button {
+  background: #6200ea;
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+note-form button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+note-form button:hover:not(:disabled) {
+  background: #4b00b5;
+}
+note-list {
+  background: rgba(255, 255, 255, 0.662);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: block;
+}
+
+note-list .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 0;
+}
+note-list .note-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: break-word;
+}
+note-list .note-item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #6200ea;
+  word-break: break-word;
+}
+note-list .note-item p {
+  flex-grow: 1;
+  white-space: pre-wrap;
+  color: #555;
+  margin: 0 0 0.8rem 0;
+  word-break: break-word;
+}
+note-list .note-meta {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: right;
+  user-select: none;
+}
